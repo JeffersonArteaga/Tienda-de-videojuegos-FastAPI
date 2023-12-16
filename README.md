@@ -7,7 +7,9 @@ Primero, debemos crear un entorno virtual de python (venv), para ejecutar un ent
 python -m venv venv
 
 Luego, para activar el entorno virtual ejecutamos el comando:
+```
 .\venv\Scripts\activate
+```
 
 Una vez activado el entorno virtuaal, vamos a clonar el repositorio del proyecto en el directorio donde creaste tu entorno virtual, una vez clonado el repositorio,
 vamos a instalar las dependecias de nuestro proyecto, estas estan especificadas en el archivo requirements.txt, para eso, vamos a ejecutar el siguiente comando:
