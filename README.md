@@ -33,3 +33,39 @@ uvicorn main:app --reload --port <elpuertoquedesees>
 
 Para poder interacturar de una vez por todas con el proyecto, deberas de ir a la ruta localhost:<elpuertoqueescogiste>/docs#/default
 Una vez alli ya podras hacer las peticiones disponibles a los endpoints que aparecen
+
+# Funcionalidades Principales:
+1. Registro y Autenticación de Usuarios:
+Los usuarios pueden registrarse en la plataforma proporcionando su correo electrónico, contraseña y nombre.
+La autenticación se realiza mediante JWT (JSON Web Tokens), lo que permite a los usuarios iniciar sesión de manera segura.
+
+2. Roles de Usuario:
+Se implementan roles de usuario, como "Cliente" y "Administrador". El acceso a ciertas funcionalidades está restringido según el rol.
+
+3. Catálogo de Videojuegos:
+El catálogo contiene información sobre varios videojuegos, como nombre, descripción, clasificación, categoría y precio.
+
+4. Operaciones de Administrador:
+Los administradores tienen acceso a operaciones CRUD (Crear, Leer, Actualizar, Eliminar) para gestionar el catálogo de videojuegos.
+
+5. Operaciones de Cliente:
+Los clientes pueden recargar puntos en su cuenta, comprar videojuegos y ver la lista de videojuegos que han comprado.
+
+6. Seguridad:
+La aplicación utiliza esquemas de seguridad basados en JWT para proteger las rutas y funcionalidades específicas.
+Estructura del Proyecto:
+
+7. Routers:
+Se han creado módulos para diferentes entidades, como usuarios, videojuegos y operaciones de clientes y administradores.
+
+8. Schemas:
+Se definen esquemas Pydantic para la validación y serialización de datos en las operaciones de la API.
+
+9. Modelos:
+Representan las entidades principales del sistema y están vinculados a la base de datos mediante SQLAlchemy.
+
+10. Base de Datos:
+La aplicación utiliza una base de datos SQLite para almacenar información sobre usuarios, videojuegos y compras.
+
+11. Seguridad:
+Se implementan mecanismos de seguridad con FastAPI Security para gestionar la autenticación y autorización de usuarios.
