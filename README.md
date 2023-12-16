@@ -13,7 +13,9 @@ Luego, para activar el entorno virtual ejecutamos el comando:
 
 Una vez activado el entorno virtuaal, vamos a clonar el repositorio del proyecto en el directorio donde creaste tu entorno virtual, una vez clonado el repositorio,
 vamos a instalar las dependecias de nuestro proyecto, estas estan especificadas en el archivo requirements.txt, para eso, vamos a ejecutar el siguiente comando:
+```
 pip install -r requirements.txt
+```
 
 Con esto, nuestro proyecto estara instalado localmente
 
@@ -23,8 +25,9 @@ Una vez instalado por completo, vamos a ir al directorio raiz donde instalamos n
 uvicorn main:app --reload
 
 Con esto, se iniciara nuestro servidor, por defecto se ejecutara en el puerto 8000, si deseas cambiar el puerto, ejecuta el comando de la siguiente manera:
+```
 uvicorn main:app --reload --port <elpuertoquedesees>
-
+```
 
 # Como interactuar con la herramienta docs
 
